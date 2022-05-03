@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header > img {
+    width: 60px;
+}
+
+header {
+    background-color: #011434;
+    position: fixed;
+    width: 100%;
+}
+
+main {
+    padding: 150px;
+    place-content: center;
+}
+
+.hero  img {
+    width: 100%;
+}
+
+.image_grid {
+    position: absolute;
+    border: 1px solid black;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.095);
+    left: 600px;
+    top: 500px;
+}
+
+.image_grid a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    gap: 5px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.icons {
+    place-self: end;
+    padding-right: 3px;
+}
+
+.card > img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+/* .inner-image {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 60px;
+  } */
+
+.card p {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    max-width: 90%;
+    text-align: center;
+
+}
+
+footer {
+    background-color: #011434;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    padding: 20px;
+}
